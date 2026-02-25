@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Nigeria 2026 | Travel Event</title>
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#0f172a;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+nav h2{
+    font-size:20px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+    height:70vh;
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about{
+    padding:50px 20px;
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.about h2{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.about p{
+    line-height:1.7;
+    color:#555;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile{
+    text-align:center;
+    margin:40px 0;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== FORM SECTION ===== */
+.form-section{
+    background:#f8fafc;
+    padding:50px 20px;
+}
+
+.form-container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0f172a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#38bdf8;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Explore Nigeria</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Event</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Explore Nigeria 2026 Travel Experience</h1>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About The Event</h2>
+    <p>
+        Explore Nigeria 2026 is a premium travel experience designed for passionate adventurers,
+        culture lovers, and explorers. Discover breathtaking landscapes, vibrant cities, and
+        rich cultural heritage across Nigeria while networking with like-minded individuals.
+    </p>
+</section>
+
+<!-- YOUR IMAGE -->
+<div class="profile">
+    <img src="victor.jpg" alt="Victor Oseloka">
+</div>
+
+<!-- FORM -->
+<section class="form-section">
+    <div class="form-container">
+        <h2>Register For The Event</h2>
+
+        <form>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label>Age</label>
+                <input type="number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Describe Yourself</label>
+                <textarea required></textarea>
+            </div>
+
+            <button type="submit">Secure Your Spot</button>
+        </form>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Explore Nigeria Travel Event | Designed by Victor Oseloka
+</footer>
+
+</body>
+</html>
